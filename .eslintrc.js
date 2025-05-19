@@ -28,7 +28,7 @@ module.exports = {
         'tailwindcss/classnames-order': 'off',
         'tailwindcss/no-custom-classname': 'off',
         'react/prop-types': 'off',
-        '@typescript-eslint/no-unused-vars': ['warn'],
+        '@typescript-eslint/no-unused-vars': ['error'],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         '@typescript-eslint/explicit-function-return-type': [
