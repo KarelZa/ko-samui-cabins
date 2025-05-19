@@ -9,7 +9,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   ignorePatterns: ['node_modules/*', '.next/*', '.out/*', '!.prettierrc.js'],
   rules: {
-    'no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': 'error',
   },
   overrides: [
     {
@@ -31,7 +31,7 @@ module.exports = {
         'tailwindcss/classnames-order': 'off',
         'tailwindcss/no-custom-classname': 'off',
         'react/prop-types': 'off',
-        'no-unused-vars': 'error',
+        '@typescript-eslint/no-unused-vars': 'error',
         'react/jsx-fragments': ['warn', 'syntax'], // Shorthand syntax for React fragments
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
         'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
