@@ -10,7 +10,11 @@
  * @type {import('lint-staged').Configuration}
  */
 module.exports = {
-  '**/*.{tsx,ts,js}': ['prettier --write --end-of-line lf', 'eslint'],
+  '**/*.{tsx,ts,js}': [
+    'prettier --write --end-of-line lf',
+    'eslint --fix',
+    'eslint --max-warnings=0',
+  ],
   '**/*.{json,md,yml}': ['prettier --write --end-of-line lf'],
   '**/*.ts?(x)': () => 'tsc -p tsconfig.json --noEmit',
 };
