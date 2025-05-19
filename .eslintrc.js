@@ -8,6 +8,9 @@ module.exports = {
   },
   parser: '@typescript-eslint/parser',
   ignorePatterns: ['node_modules/*', '.next/*', '.out/*', '!.prettierrc.js'],
+  rules: {
+    'no-unused-vars': 'error',
+  },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
