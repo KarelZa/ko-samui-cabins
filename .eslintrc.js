@@ -29,7 +29,9 @@ module.exports = {
         'tailwindcss/no-custom-classname': 'off',
         'react/prop-types': 'off',
         '@typescript-eslint/no-unused-vars': ['error'],
-        'react-hooks/rules-of-hooks': 'error',
+        'react/jsx-fragments': ['warn', 'syntax'], // Shorthand syntax for React fragments
+        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+        'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
         'react-hooks/exhaustive-deps': 'error',
         '@typescript-eslint/explicit-function-return-type': [
           'off',
